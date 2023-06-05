@@ -16,7 +16,6 @@ Decidimos explorar o formulário de submissão e começamos por experimentar ins
 
 <img width="550" alt="Screenshot 2023-05-16 at 13 25 55" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/9d23a752-28e5-4575-af64-0c1b7095c37d">
 
-
 De seguida, decidimos inspecionar o servidor web para descobrir como poderíamos interagir e encontrar uma maneira de capturar a flag.
 Após submetermos o formulário, descobrimos que a área de seleção ```Give the flag``` tinha o ID = 'giveflag'. Isso permitiu que com um certo input ser possível obter acesso à flag e, consequentemente, descobri-la.
 
