@@ -1,7 +1,6 @@
 
 # Trabalho realizado na Semana #3
 
-
 ## Identificação
 
 - a página de login do SolarWinds Storage Manager Server era vulnerável a ataques de injeção de SQL
@@ -9,14 +8,12 @@
 - além disso, um invasor podia aproveitar essa falha para comprometer o sistema operacional do host do servidor de banco de dados
 - esta vulnerabilidade ocorre em versões anteriores a 5.1.2
 
-
 ## Catalogação
 
 - esta vulnerabilidade foi reportada por Javier Castro da Digital Defense no dia 24 de janeiro de 2012
 - a vulnerabilidade foi descoberta através de testes de injeção de SQL realizados pelo mesmo
 - ao realizar os testes no software descobriu que era possível roubar informações confidenciais ou até modificar dados
 - o nível de gravidade era 10.0
-
 
 ## Exploit
 
@@ -29,7 +26,6 @@
     - Nome: Solarwinds Storage Manager 5.1.0;
     - Tipo : EXPLOIT-DB 18833;
     - Este exploit enviava uma consulta SQL maliciosa para criar um ficheiro JSP na raiz do diretório web e, de seguida, fazia o download e executava o programa malicioso no contexto do SYSTEM.
-
 
 ## Ataques
 
@@ -46,6 +42,5 @@
     - cpe:2.3:a :solarwinds:storage_manager:*:*:*:*:*:*:*:*
     - cpe:2.3:a :solarwinds:storage_profiler:*:*:*:*:*:*:*:*
 - estas configurações comprometeram toda a integridade, o que implicava acesso a tudo o que era confidencial na página SolarWinds
-
 
 ##### CVE-2012-2576 -> https://www.cvedetails.com/cve/CVE-2012-2576/
