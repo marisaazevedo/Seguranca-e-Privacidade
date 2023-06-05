@@ -10,7 +10,7 @@ Em seguida usamos o gbd no programa atraves do comando ``` gdb program ```  e em
 
 ![Screenshot from 2023-06-03 12-56-23](https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/124071367/aa844ca5-3088-4066-ab52-81b315e313a5)
 
-Uma das funções mais cruciais presentes no codigo era a ```old_backdoor```, pois, ao analisarmos essa função com o comando ```disas```, descobrimos uma chamada de sistema que permitiria abrir um shell. 
+Uma das funções mais cruciais presentes no codigo era a ```old_backdoor```, pois, ao analisarmos essa função com o comando ```disas```, descobrimos uma chamada de sistema que permitiria abrir um shell.
 
 Para conseguirmos escrver o exploit para esta vulnerabilidade, tivemos de encontar o endereço onde ocrre um jump (0x0804c010), para redirecionamos o programa para essa a funçao ```old_backdoor```.
 
@@ -18,6 +18,5 @@ Para conseguirmos escrver o exploit para esta vulnerabilidade, tivemos de encont
 
 Depois de termos escrito o exploit, executamos-o com o comando:
                ```python3 exploit.py```
-               
- ![Screenshot from 2023-06-04 19-23-54](https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/124071367/2d9addd1-1293-4ab0-be94-81da42302467)
 
+![Screenshot from 2023-06-04 19-23-54](https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/124071367/2d9addd1-1293-4ab0-be94-81da42302467)
