@@ -18,4 +18,5 @@ Após analisar o código do programa, percebemos que para causar buffer-overflow
 
 Ao executar o script de python auxiliar, tendo a string ppppppppppppppppppppflag.txt como input, obtivémos a flag: **flag{c27e11234fbef14d08c42ca64d22ddce}**.
 
+
 ![checksecc](https://user-images.githubusercontent.com/123839132/229186326-4214e277-a3a2-424e-a1e5-49229ef3b38d.png)
