@@ -1,5 +1,6 @@
 Neste desafio, começamos por tentar perceber onde poderia haver uma vulnerabilidade na página, fazendo login sem sucesso. Com isto pesquisamos exploits que existem em sites WordPress e encontramos o seguinte, [https://www.exploit-db.com/exploits/50299](https://www.exploit-db.com/exploits/50299).
 
+
 Desta forma e como é referido no site acima mencionado, executamos o comando:
 
 ```python3 exploit.py http://ctf-sp.dcc.fc.up.pt:5001/ 1 ```
