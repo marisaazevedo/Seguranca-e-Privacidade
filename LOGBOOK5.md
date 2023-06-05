@@ -1,4 +1,5 @@
 ## Semana 5
+
 ### Task 1 - 3.4
 
 ![3 4T1](https://user-images.githubusercontent.com/123839132/226573313-4cbd1ee3-241e-4adc-bc2a-0d70ff299108.png)
@@ -34,6 +35,7 @@ Esta linha de comando torna o ficheiro ´stack´ num SET-UID.
 
 
 ### Task 3 - 5.1
+
 `` O comando touch badfile foi feito no 5.1 ``
 
 ![1](https://user-images.githubusercontent.com/123839132/228990021-17743910-2b16-420b-8bef-5fdff8201b47.png)
