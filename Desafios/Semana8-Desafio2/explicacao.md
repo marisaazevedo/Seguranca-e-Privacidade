@@ -46,4 +46,5 @@ Depois disso, criamos um array de bytes contendo 77 caracteres "a" (poderia ser 
 
 - Obtendo assim a flag: **flag{29fe1f9b4d5951867ccf327de41b53b6}**
 <br/><br/>
+
   <img width="698" alt="Screenshot 2023-05-04 at 14 49 53" src="https://user-images.githubusercontent.com/98234753/236226934-fd56c819-6e11-4cf9-96fd-f964d9c7bde6.png">
