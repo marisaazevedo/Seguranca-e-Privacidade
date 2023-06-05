@@ -17,9 +17,10 @@ Ao ler '%s' de input:
 Para resolver esta tarefa, só precisámos fornecer "%s" como entrada para o servidor e o programa crasha com sucesso. Isto acontece porque a chamada printf() com %s requer que o argumento seja um ponteiro para um array de char, mas nesta chamada nenhum argumento é fornecido. Assim,a função tentará imprimir o primeiro elemento da pilha, mas como o primeiro elemento da pilha não é uma string, o programa crasha.
 
 ### Task 2
+
 #### Task 2.a
 
-O input de 4 bytes que decidimos escrever foi "AAAA" de forma a ser mais fácil identificar (0x41414141). Assim, o objetivo foi procurar por este último valor no nosso output para saber exatamente quantos especificadores de formato %x precisavamos. 
+O input de 4 bytes que decidimos escrever foi "AAAA" de forma a ser mais fácil identificar (0x41414141). Assim, o objetivo foi procurar por este último valor no nosso output para saber exatamente quantos especificadores de formato %x precisavamos.
 Após algumas tentivas, acabamos por perceber que precisávamos de 64%x para imprimir o nosso input.
 
 ![task2a_echo](https://user-images.githubusercontent.com/123839132/232046635-7654aad2-0ae9-4be1-8dc8-aa936b97856c.png)
@@ -42,6 +43,7 @@ Obtendo o seguinte:
 ![Screenshot from 2023-04-14 17-00-27](https://user-images.githubusercontent.com/124071367/232096042-a2cd709b-7687-47d5-904f-ad1be45b1620.png)
 
 ### Task 3
+
 #### Task 3.a
 
 Para modificar o valor do target, basta aplicar a mesma lógica que fizemos para mostrar a mensagem secreta na Task anterior. Primeiramente, precisamos converter o endereço do alvo ``number  = 0x080e5068`` para Little-Endian, seguido de uma certa quantidade de %x.
@@ -53,7 +55,6 @@ A única diferença é que agora, invés de querer ver a string, dada pelo %s, q
 
 Depois de executar o script, alteramos o valor com sucesso
 ![Screenshot from 2023-04-14 17-13-41](https://user-images.githubusercontent.com/124071367/232099228-44cb2ba0-6285-42a2-8cab-bfd2acc87e95.png)
-
 
 #### Task 3.b
 
@@ -97,7 +98,7 @@ with open('badfile', 'wb') as f:
 
 ##### 2ªresolução:
 
-O numero máximo de caracteres que podemos inserir é 1500, devido ao buffer. 
+O numero máximo de caracteres que podemos inserir é 1500, devido ao buffer.
 
 ```ruby
 #!/usr/bin/python3
@@ -111,7 +112,7 @@ content[0:4]  =  (number).to_bytes(4,byteorder='little')
 
 content[4:8]  =  ("abcd").encode('latin-1')
 
-s = "%.10x"*62 + "%.19852x" + "%n\n" 
+s = "%.10x"*62 + "%.19852x" + "%n\n"
 
 fmt  = (s).encode('latin-1')
 content[8:8+len(fmt)] = fmt
