@@ -12,7 +12,7 @@ As proteções ativadas são:
 
 **Análise do Programa**
 
-- Qual é a linha do código onde a vulnerabilidade se encontra? 
+- Qual é a linha do código onde a vulnerabilidade se encontra?
 <br/> Encontra-se na linha 27: "print(buffer)". Permite que se imprima uma string sem formatação.
 <br/><br/>
 - O que é que a vulnerabilidade permite fazer?
@@ -25,7 +25,7 @@ As proteções ativadas são:
 **gdb**
 
  Executamos o debugger no programa para encontrar o endereço do buffer da flag. Como não existe a proteção PIE (randomização de endereço), os endereços são mantidos através das execuções.
-- Obtendo então o seguinte endereço 0x804c060. 
+- Obtendo então o seguinte endereço 0x804c060.
 <br/><br/>
 ![image](https://user-images.githubusercontent.com/98234753/232111677-92b7ae35-8d5a-4536-8127-82e58f44697a.png)
 <br/><br/>
@@ -37,4 +37,3 @@ Com acesso ao endereço do buffer da flag, convertemos o mesmo para little endia
 - Obtendo assim a flag: **flag{c77ae9b368c35edac4c1d3dde7c466f4}**
 <br/><br/>
 ![image](https://user-images.githubusercontent.com/98234753/232118475-708cec4a-2e6f-49dc-a084-afff00e934e5.png)
-
