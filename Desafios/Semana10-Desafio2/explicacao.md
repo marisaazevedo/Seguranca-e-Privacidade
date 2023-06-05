@@ -1,7 +1,7 @@
 - **Que funcionalidades é que estão acessiveis a um utilizador sem este estar autenticado?**
-    
+
     A funcionalidades que estão acessíveis a um utilizador não autenticado são o ```login``` e o ```ping```.
-    
+
     Para testar as funcionalidades para um utilizador não autenticado, verificamos a secção ```Check out your network status! Here```.
 
     Inicialmente começamos por verificar o estado da rede para a porta 5000 do servidor ctf-sp.dcc.fc.up.pt.
