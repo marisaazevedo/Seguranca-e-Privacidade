@@ -8,4 +8,5 @@
 
 - Ao executar o script de python auxiliar, tendo a string ```pppppppppppppppppppp\x23\x22\xfc\xfeflag.txt``` como input, obtivémos a flag: **flag{3c43df981add5e0dc77cd3db5328b691}**.
 
+
 ![Desafio2](https://user-images.githubusercontent.com/123839132/229187681-1a62aede-2b23-454b-bc46-97bdf7c44b93.png)
