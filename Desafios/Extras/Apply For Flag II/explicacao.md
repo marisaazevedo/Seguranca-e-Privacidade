@@ -2,6 +2,7 @@ Após abrir o link para este desafio, deparamo-nos com esta página inicial:
 
 <img width="765" alt="Screenshot 2023-06-04 at 12 32 44" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/823675da-02a5-4e58-9352-8d481948edb9">
 
+
 Decidimos enviar uma mensagem para verificar o que acontece e fomos direcionados para outra página onde verificamos que ```Your request hasn't been approved... Try again later!```.
 
 <img width="762" alt="Screenshot 2023-06-04 at 12 33 11" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/433960c7-4e3d-41d5-85ad-30644cd3ef24">
