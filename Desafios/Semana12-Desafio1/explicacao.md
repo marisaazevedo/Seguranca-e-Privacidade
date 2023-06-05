@@ -1,5 +1,6 @@
 ### **Descobrir o valor de ```p``` e ```q```**
 
+
 Ao analisarmos o código fornecido, notamos que ```p``` e ```q``` seriam os números primos maiores que 2^512 e 2^513, respetivamente.
 
 Para os descobrir, utilizamos um código em Python que calculasse o próximo número primo.
@@ -56,6 +57,7 @@ Obtendo então:
 
 ### **Descobrir expoente privado ```d``` utilizando ```p``` e ```q```**
 
+
 Utilizamos um algoritmo em python encontrado na internet para descobrir o valor de ```d```.
 
 ```python
@@ -67,21 +69,21 @@ def mod_inverse(x, y):
 
         if b == 0:
             return (1, 0)
-        
+
         # Divide a por b e obtém o quociente q e o resto r
         (q, r) = (a // b, a % b)
-        
+
         # Chama recursivamente o algoritmo de Euclides estendido para (b, r)
         (s, t) = extended_euclidean_algorithm(b, r)
-        
+
         # Retorna o resultado da recursão e realiza os cálculos necessários para obter os coeficientes s e t corretos
         return (t, s - (q * t))
 
     inv = extended_euclidean_algorithm(x, y)[0]
-    
+
     if inv < 1:
         inv += y  # Queremos apenas valores positivos
-        
+
     return inv
 ```
 
