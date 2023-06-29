@@ -1,6 +1,6 @@
 ## Grupo de Segurança e Privacidade
 
-![](https://img.shields.io/badge/Logbook_solutions_for_SEED_Labs_and_CTFs-6495ED)
+![](https://img.shields.io/badge/Logbook_solutions_for_SEED_Labs_and_CTFs-6496ED?style=for-the-badge)
 
 #### Turno: 01
 
