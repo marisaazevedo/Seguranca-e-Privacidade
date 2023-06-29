@@ -9,10 +9,8 @@ O primeiro argumento é o url e o segundo é o id de um utilizador. Decidimos ut
 
 Com isto, obtemos 3 links e um deles abriu a página do admin.
 
-![terminal](https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/1752dfb4-e867-4bb0-849c-21c335ed0c35)
-
-![success](https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/d0d1903b-cb4e-449a-bf54-6446e4ddae08)
+![Screenshot 2023-06-29 at 11 28 11](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/2aa71ffd-c90e-4ca7-8750-a5dc237c3a4a)
 
 Após isto, exploramos a página e encontramos a flag na seccção ```Posts```.
 
-![flag](https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/aae01aa7-9343-435d-8b82-9e336ccf708a)
+![Screenshot 2023-06-29 at 11 28 25](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/d3be653b-1a18-4670-b451-b3b484585b18)
