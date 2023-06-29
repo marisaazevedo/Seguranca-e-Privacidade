@@ -1,15 +1,14 @@
 Após abrir o link para este desafio, deparamo-nos com esta página inicial:
-
-<img width="765" alt="Screenshot 2023-06-04 at 12 32 44" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/823675da-02a5-4e58-9352-8d481948edb9">
+![Screenshot 2023-06-29 at 11 31 33](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/024c69b1-3a08-4a4e-8f89-33e4a848bb57)
 
 
 Decidimos enviar uma mensagem para verificar o que acontece e fomos direcionados para outra página onde verificamos que ```Your request hasn't been approved... Try again later!```.
 
-<img width="762" alt="Screenshot 2023-06-04 at 12 33 11" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/433960c7-4e3d-41d5-85ad-30644cd3ef24">
+![Screenshot 2023-06-29 at 11 31 39](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/652c06a6-1f56-42cb-bb24-4dbca6dc3ec7)
 
 Porém na página acima existe também ```The admin will use this page to check your request```, onde ```page``` nos direciona para uma página que tem os seguintes campos ```Give the flag``` e ```Mark request as read```.
 
-<img width="332" alt="Screenshot 2023-06-04 at 12 33 20" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/36361b5d-1d06-45b9-a715-a083c5e7aba8">
+![Screenshot 2023-06-29 at 11 31 44](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/82baa168-bf77-40b0-af23-f8bc90545b60)
 
 Ao clicar em ```here``` reparamos que retornava à página anterior.
 
@@ -31,20 +30,20 @@ A fim de submeter diretamente à última página, é preciso efetuar um pedido P
 
 Depois de submetermos o código acima:
 
-<img width="1040" alt="Screenshot 2023-06-04 at 12 51 21" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/4312e28e-1585-4bca-93c8-8a90d60bbd32">
+![Screenshot 2023-06-29 at 11 31 51](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/51a771b8-3f48-4efa-9af4-b703d47f3475)
 
 Deparamo-nos com ```Forbidden: You don't have the permission to access the request resource.```
 
-<img width="825" alt="Screenshot 2023-06-04 at 12 51 44" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/6ad973c9-0fdb-4272-a64f-4dc93fe2ea77">
+![Screenshot 2023-06-29 at 11 31 57](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/2475c1b5-0c6c-4344-b46c-13172b8b5ca0)
 
 Que apenas pode ser resolvido desativando o javascript para o website.
 
-<img width="668" alt="Screenshot 2023-06-04 at 12 58 33" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/0e44570f-ae15-4f2d-99f6-e031a68dcc00">
+![Screenshot 2023-06-29 at 11 32 15](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/67e23335-1b35-4ed2-b60c-b8826c80a690)
 
 Após o javascript estar desativado, tentamos novamente e fomos direcionados para:
 
-<img width="756" alt="Screenshot 2023-06-04 at 13 00 33" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/6d9f4dbb-7e7d-435d-a9b3-616dcb946528">
+![Screenshot 2023-06-29 at 11 32 22](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/82889d65-ed07-4673-b299-2ba66beb8daa)
 
 Após darmos refresh, finalmente obtemos a flag: **flag{afc587b8e2f138c7b7405e3ba215c072}**
 
-<img width="572" alt="Screenshot 2023-06-04 at 13 01 26" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/e168d40b-5b9c-47b4-a46d-8423cfe51f41">
+![Screenshot 2023-06-29 at 11 32 27](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/de1ca5ad-5e16-4e1a-b8cf-a45895c99972)
