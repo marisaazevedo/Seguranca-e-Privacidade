@@ -1,12 +1,12 @@
 Primeiro, utilizamos ```checksec``` no ```program```:
 
-<img width="355" alt="Screenshot 2023-06-04 at 18 31 37" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/308938bf-4306-440d-a5d4-aebf50f638a0">
+![Screenshot 2023-06-29 at 11 33 53](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/614d79d1-e3e2-4bdb-92da-ce0bd8b79c12)
 
 Verificamos que todas as proteções estão ativas.
 
 Como foi indicado neste desafio "Não te esqueças, não há nada totalmente seguro." Então começamos por ultrapassar o máximo de caracteres permitidos, neste caso o máximo era 20.
 
-<img width="899" alt="Screenshot 2023-06-04 at 18 37 11" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/e1992e5f-254b-4ca3-a424-e1c28c27d6cc">
+![Screenshot 2023-06-29 at 11 33 58](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/79654a87-4984-4176-870d-bd12c9ddd43a)
 
 Com isto verificamos que ```stack smashing detected```, indicando então que o ```program``` não verifica o número máximo de caracteres, esperando que o canary faça essa confirmação.
 
@@ -14,7 +14,7 @@ Após fazermos debugging ao ```program```, descobrimos algo que não é nada nor
 
 Confirmando a nossa suposição:
 
-<img width="507" alt="Screenshot 2023-06-04 at 18 38 09" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/287af3d6-ad3c-424e-9edc-45d5f2242a19">
+![Screenshot 2023-06-29 at 11 34 05](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/8c0ead74-aa1b-462c-afa1-949c82f376cd)
 
 Como conseguimos imprimir a informação da stack, confirmamos que as nossas suspeitas estavam corretas.
 
@@ -71,4 +71,4 @@ p.interactive()
 
 Após executarmos ```python3 script.py```, finalmente obtemos a flag: **flag{446742e444cf864d5d85fa643112492a}**
 
-<img width="606" alt="Screenshot 2023-06-04 at 18 38 52" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/073ee602-1c6b-460b-9b86-3baf00c67159">
+![Screenshot 2023-06-29 at 11 34 13](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/b1f7d6d5-e2c2-49d4-8e33-33ab99576cb1)
