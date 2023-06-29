@@ -1,4 +1,6 @@
-## Grupo de Segurança e Privacidade (SEED LABS solutions)
+## Grupo de Segurança e Privacidade
+    
+**(SEED LABS solutions)**
 
 #### Turno: 01
 
