@@ -4,13 +4,13 @@
 
  Começamos por copiar o openssl.cnf para o nosso diretório para que pudéssemos fazer as alterações necessárias no mesmo, e como pedido no guião, tiramos o comentário no parametro 'unique_subject'.
 
-<img width="604" alt="image" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/a5a43032-d7e7-4617-b6e4-8252cbda2e45">
+![Screenshot 2023-06-29 at 11 06 07](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/d4448677-a0a2-4eca-b660-2376a8d41c76)
 
 Após isto, criamos a pasta 'demoCA' e adicionamos os arquivos necessários conforme referido no guião.
 
 Após a configuração inicial, precisamos gerar um certificado self-signed para a nossa CA:
 
-<img width="1671" alt="image" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/c2342e2c-6880-4db8-9235-7f9b130587e7">
+![Screenshot 2023-06-29 at 11 06 24](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/2fc065a5-c8ad-462a-85d4-f62d3a19e09f)
 
 Podemos usar os seguintes comandos para ver o conteúdo decodificado do certificado X509 e a chave RSA:
 
@@ -409,7 +409,7 @@ openssl req -newkey rsa:2048 -sha256  \
             -passout pass:dees
 ```
 
-<img width="1674" alt="image" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/beb2275a-416d-48a5-8b91-f6b4087af819">
+![Screenshot 2023-06-29 at 11 07 46](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/8dc3f738-5f4f-4ce2-a006-7ddafe943a36)
 
 Como pedido no enunciado, devemos adicionar nomes alternativos, pois muitos sites têm URLs diferentes que fazem parte do mesmo "servidor":
 
@@ -424,8 +424,7 @@ openssl req -newkey rsa:2048 -sha256  \
 
 ```
 
-<img width="1672" alt="image" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/bdd98ab7-eeff-469a-a39b-ebac2593eb3a">
-
+![Screenshot 2023-06-29 at 11 07 59](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/66fb6dc0-be0f-4f7f-a33a-1375353523a3)
 
 Usamos os seguinte comandos para **examinar o conteúdo decodificado do CSR** e dos arquivos da chave privada:
 
@@ -434,7 +433,7 @@ openssl req -in server.csr -text -noout
 openssl rsa -in server.key -text -noout
 ````
 
-<img width="746" alt="image" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/2069eb0d-1805-442a-a93f-1434726586d9">
+![Screenshot 2023-06-29 at 11 08 13](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/61971845-3fc8-4b69-b220-b9482b6eff62)
 
 ```py
 [06/04/23]seed@VM:~/.../Crypto_PKI$ openssl rsa -in server.key -text -noout
@@ -539,15 +538,15 @@ Para isso:
 
 1. Modificamos o arquivo `openssl.cnf` e descomentamos a linha que contém o ``copy_extensions```:
 
-   ![image](https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/2b3ff8d9-f159-4267-bb7e-59a9a36be33d)
+![Screenshot 2023-06-29 at 11 09 41](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/264b1936-47a6-4289-bc04-051ea57ac81c)
 
 2. Em seguida, transformamos o **CSR** (Certificate Signing Request) em um certificado **X509**:
 
-   ![image](https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/898197b1-8d6b-4e40-985a-a12ecc4d0762)
+![Screenshot 2023-06-29 at 11 09 52](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/88e6d85e-6b11-44c8-994b-82ba6e1a8278)
 
 3. Com o certificado X509 gerado, verificamos o seu conteúdo para garantir que os nomes "alternativos" adicionados na tarefa anterior estão presentes. Isso confirma que a modificação do arquivo `openssl.cnf` foi aplicada corretamente.
 
-   ![image](https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/c0466f4c-5b28-4e65-b6a4-e1c47978bc88)
+![Screenshot 2023-06-29 at 11 10 15](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/e36bf1f4-1c20-46d6-a908-5432d34e09b5)
 
 ## Task 4: Deploying Certificate in an Apache-Based HTTPS Website
 
@@ -555,8 +554,7 @@ Nesta tarefa, vamos ver como os certificados de chave pública são usados por s
 
 Começamos por configurar o nosso arquivo ```bank32_apache_ssl.conf```, que é responsável por definir o diretório onde os arquivos de cada site estão armazenados no servidor Apache e os nossos hosts.
 
-<img width="1207" alt="image" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/bb468944-dce6-4739-acf8-f47a89189a77">
-
+![Screenshot 2023-06-29 at 11 11 43](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/d5dcda23-4405-4707-96a1-4f25b07fba56)
 
 * Desta forma, garantimos que o servidor sabe como gerir múltiplos sites em simultâneo.
 
@@ -568,20 +566,21 @@ De seguida, precisamos de configurar o nosso site:
 
 3. Dentro do container, habilitamos o módulo SSL do Apache e ativamos o site como pedido no enunciado.
 
-<img width="886" alt="image" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/2f4b5a12-2ef3-44f1-9611-748fadf0bebf">
+![Screenshot 2023-06-29 at 11 11 55](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/afefa22b-844c-4842-a628-7915ceebd97a)
 
 * Quando acedemos ao nosso website , o navegador exibe um erro que o nosso website está a ser reconhecido por uma CA não confiavel, uma vez que ele é self-signed:
 
-<img width="896" alt="image" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/c7194314-7933-45bb-b439-faf5211cd071">
-<img width="783" alt="image" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/ba5b8854-8e6d-440e-93f5-7be7a3bbb221">
+![Screenshot 2023-06-29 at 11 12 06](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/2103c6c4-2a27-43e0-b6de-e429c4c341c7)
+
+![Screenshot 2023-06-29 at 11 12 13](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/cd70ee80-507e-49d3-9668-bc036bb123d3)
 
 * Como dito no enunciado, para corrigir esse aviso adicionamos manualmente a nossa CA na lista de CAs confíaveis no Firefox:
 
-<img width="898" alt="image" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/6a765ea0-66d2-4be2-9904-132203d2c897">
+![Screenshot 2023-06-29 at 11 12 22](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/b43b1ab9-1759-4b0f-b8bc-96458a823269)
 
 * Após inserirmos, conseguimos verificar que já temos acesso ao nosso website:
 
-<img width="887" alt="image" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/f8b5e4f8-1083-42e0-8408-0df8c6fa84a0">
+![Screenshot 2023-06-29 at 11 12 50](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/58cc4093-2419-49c9-8ce7-6638dae49f5e)
 
 ## Task 5: Launching a Man-In-The-Middle Attack
 
@@ -589,17 +588,17 @@ Nesta tarefa, mostraremos como a PKI pode derrotar ataques Man-In-The-Middle (MI
 
 Primeiro, selecionamos o site `www.zara.com` como alvo e configuramos o nosso servidor para se passar por esse site. Modificámos o nosso arquivo `bank32_apache_ssl.conf` e alteramos o **ServerName** para `www.zara.com`.
 
-![Configuração do ServerName](https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/3f0202e3-8e73-407a-b412-94457fa94f7b)
+![Screenshot 2023-06-29 at 11 14 16](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/4bddd088-c02e-47ad-9a8a-46e8ab663b35)
 
 Em seguida, editamos o arquivo `/etc/hosts` e criamos uma entrada associando o nome de domínio `www.zara.com` a um endereço IP específico.
 
-![Edição do arquivo /etc/hosts](https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/b1e6cfe8-9980-4f10-832e-d7225ae932b2)
+![Screenshot 2023-06-29 at 11 14 24](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/5c02ec3e-d4f8-43ad-8a48-bf89c5432ecb)
 
 * Reiniciamos o nosso APACHE , utilizando o comando `sudo service apache2 restart`.
 
 Ao tentar aceder ao site `www.zara.com`, recebemos um erro de certificado:
 
-![Erro de certificado](https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/4c905b78-d306-46f2-8372-431959eb4dd8)
+![Screenshot 2023-06-29 at 11 14 32](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/46885af7-c3e9-4728-93c5-32bc8e02db7f)
 
 Este erro ocorre porque estamos a tentar aceder ao site utilizando um certificado que não é válido para o domínio em questão. O nosso certificado é válido apenas para os seguintes sites:
 
@@ -617,20 +616,20 @@ Primeiramente, criamos o certificado para o site alvo, no caso utilizamos o site
 
 Utilizamos o comando que executamos da Tarefa 2 para criar o nosso certificado, temos que trocar a parte de  "www.bank32.com" pelo nosso site alvo "www.zara.com".
 
-<img width="979" alt="image" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/41d8d549-346e-461e-8eee-03cb5d1963e2">
+![Screenshot 2023-06-29 at 11 16 02](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/9c67f62e-412e-43d3-aa0d-86296c0f0cec)
 
 De seguida, assinamos o nosso certificado:
 
-<img width="1265" alt="image" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/745fa50e-269a-41f2-8d60-f5c0e9ae0dfe">
+![Screenshot 2023-06-29 at 11 16 09](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/b5619b71-0af0-40e5-a9bc-e624033d008e)
 
 * Como geramos o novo certificado (zara_server.crt) e possuimos a chave privada (zara_server.key), precisamos copiá-los para a pasta image_www/certs para substituir os arquivos de certificado usados na tarefa anterior e executamos os seguintes comandos:
 
-<img width="788" alt="image" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/514389b3-c148-4d32-b9de-b6349cc3be00">
+![Screenshot 2023-06-29 at 11 16 15](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/621886a4-f716-4319-a206-181a52e113be)
 
 * Tivemos também que modificar o ficheiro ```Dockerfile```:
 
-<img width="814" alt="image" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/fd53de62-af22-47ab-bc99-bd807a2050ae">
+![Screenshot 2023-06-29 at 11 16 24](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/ff0f496d-700e-4fee-aba4-d2dbe348d070)
 
 * Depois de reiniciar o nosso docker container e inicializar o nosso apache, conseguimos entrar no nosso site e realizar com sucesso o ataque MITM:
 
-<img width="1261" alt="image" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/123839132/42e75c44-0869-4e11-8d3a-6b76515c5b3b">
+![Screenshot 2023-06-29 at 11 16 35](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/a65dd831-7882-4502-8a25-ef79c0f20d1f)
