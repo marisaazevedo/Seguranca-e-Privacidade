@@ -1,6 +1,6 @@
 ## Grupo de Segurança e Privacidade
     
-**(SEED LABS solutions)**
+**Logbook solutions for SEED Labs and CTFs**
 
 #### Turno: 01
 
