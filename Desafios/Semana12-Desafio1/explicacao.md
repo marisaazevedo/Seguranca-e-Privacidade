@@ -51,12 +51,12 @@ def nextPrime(N):
 
 Obtendo então:
 
-<img width="1258" alt="Screenshot 2023-05-29 at 13 32 07" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/d1aafd66-f52a-45e7-9fc3-8f7237ce4d2c">
 
 <br></br>
 
 ### **Descobrir expoente privado ```d``` utilizando ```p``` e ```q```**
 
+![Screenshot 2023-06-29 at 11 24 52](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/2fe7175e-e454-475e-9893-933f6d05b42d)
 
 Utilizamos um algoritmo em python encontrado na internet para descobrir o valor de ```d```.
 
@@ -89,7 +89,7 @@ def mod_inverse(x, y):
 
 Obtendo entao para ```d = mod_inverse(e, (p - 1) * (q - 1))``` o seguinte:
 
-<img width="1257" alt="Screenshot 2023-05-29 at 13 32 46" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/774b9de6-6de0-4913-b9f7-1c374e8e4db5">
+![Screenshot 2023-06-29 at 11 24 59](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/6bb2bc15-e8f3-4b43-80c6-d0f4298a0f34)
 
 Agora apenas é necessário descobrir a flag encriptada. Executando o seguinte código no terminal:
 
@@ -97,7 +97,7 @@ Agora apenas é necessário descobrir a flag encriptada. Executando o seguinte c
 
 Obtendo a seguinte sequência de números e letras criptografadas.
 
-<img width="1260" alt="Screenshot 2023-05-29 at 13 33 07" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/5eebaec6-d497-4df0-b821-1c0507c726a7">
+![Screenshot 2023-06-29 at 11 25 05](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/0eb2bb6f-79ec-4d7e-89f6-dc3a7a87b8af)
 
 <br></br>
 
@@ -134,4 +134,4 @@ print(y.decode())
 
 Ao executar o código, obtemos então a flag: **flag{7a638f2651ad8057a9897f85f983a062}**
 
-<img width="1189" alt="Screenshot 2023-05-29 at 13 33 33" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/ddec6a1b-3ecc-4ae7-8a76-e26c58cef7b3">
+![Screenshot 2023-06-29 at 11 25 13](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/6507a95a-3ecf-4429-aef8-04d756bce396)
