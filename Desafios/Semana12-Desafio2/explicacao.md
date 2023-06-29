@@ -4,7 +4,7 @@ Como sabemos, foi-nos fornecido um servidor onde duas pessoas comunicam entre si
 
 Começamos por executar o código para obter a informação do servidor: ```nc ctf-sp.dcc.fc.up.pt 6001```
 
-<img width="746" alt="Screenshot 2023-05-29 at 16 03 40" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/35ba3776-c1d2-4e88-8efe-5f9b7bf419ab">
+![Screenshot 2023-06-29 at 11 26 28](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/6655d0b2-0e75-4d74-9ba9-cb49b21d9f50)
 
 Após recebermos os valores do servidor, podemos utilizá-los num programa Python que encontramos na internet e adaptá-lo para o cenário deste desafio.
 
@@ -59,11 +59,11 @@ if __name__ == '__main__':
 
 De seguida executamos o código: ```python3 rsa_decrypt.py```. Obtendo o seguinte output em decimal:
 
-<img width="1256" alt="Screenshot 2023-05-29 at 16 04 06" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/7f2872e2-1632-4536-a2c5-c6f75c641356">
+![Screenshot 2023-06-29 at 11 26 36](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/4a659afe-f677-4ca0-ba52-cf6edd0f0ac9)
 
 Com o resultado obtido, passamos o ```PlainText``` de decimal para hexadecimal:
 
-<img width="744" alt="Screenshot 2023-05-29 at 16 04 21" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/dfdff173-a058-4d0e-8c0d-f75c3ea1240f">
+![Screenshot 2023-06-29 at 11 26 44](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/fd9b3e0e-adc7-43d5-af98-4d367fe76c8a)
 
 <br></br>
 
@@ -71,4 +71,4 @@ Com o resultado obtido, passamos o ```PlainText``` de decimal para hexadecimal:
 
 E finalmente, convertemos de hexadecimal para texto e a flag foi descoberta: **flag{c6b0e5eeea16112e8be35f1780ab3a37}**
 
-<img width="1198" alt="Screenshot 2023-05-29 at 16 04 45" src="https://github.com/DCC-FCUP-SP/sp2223-t01g06/assets/98234753/3e3e5bc3-e546-4da9-971a-a2cfeed562d7">
+![Screenshot 2023-06-29 at 11 26 51](https://github.com/marisaazevedo/Seguranca-e-Privacidade/assets/98234753/71bc676c-2017-4756-bb7b-c9fc6149ea5e)
